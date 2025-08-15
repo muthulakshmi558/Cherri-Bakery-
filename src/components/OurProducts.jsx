@@ -20,7 +20,7 @@ const OurProducts = () => {
     { name: "PASTRIES", types: "12 TYPES", image: pastryImg },
     { name: "SWEETS", types: "25 TYPES", image: sweetsImg, link: "/sweets" },
     { name: "GIFT BOX", types: "10 TYPES", image: giftImg },
-    { name: "SAVORIES", types: "34 TYPES", image: savoriesImg }, // fixed spelling
+    { name: "SEVORIES", types: "34 TYPES", image: savoriesImg }, // fixed spelling
     { name: "BREADS", types: "14 TYPES", image: breadsImg },
     { name: "COOKIES AND BISCUITS", types: "19 TYPES", image: biscuitsImg, link: "/cookies" },
     { name: "CREAM ROLL", types: "4 TYPES", image: creamrollImg },
