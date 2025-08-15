@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link
+import { Link } from "react-router-dom"; 
 import cakeImg from "../assets/images/cake.png";
-import pastryImg from "../assets/images/Pastries.png";
+import pastryImg from "../assets/images/pastries.png"; // fixed case
 import sweetsImg from "../assets/images/sweets.png";
-import giftImg from "../assets/images/cake.png";
+import giftImg from "../assets/images/gift.png"; // better image if available
 import savoriesImg from "../assets/images/savories.png";
 import breadsImg from "../assets/images/breads.png";
 import biscuitsImg from "../assets/images/biscuits.png";
@@ -20,13 +20,13 @@ const OurProducts = () => {
     { name: "PASTRIES", types: "12 TYPES", image: pastryImg },
     { name: "SWEETS", types: "25 TYPES", image: sweetsImg, link: "/sweets" },
     { name: "GIFT BOX", types: "10 TYPES", image: giftImg },
-    { name: "SEVORIES", types: "34 TYPES", image: savoriesImg },
+    { name: "SAVORIES", types: "34 TYPES", image: savoriesImg }, // fixed spelling
     { name: "BREADS", types: "14 TYPES", image: breadsImg },
     { name: "COOKIES AND BISCUITS", types: "19 TYPES", image: biscuitsImg, link: "/cookies" },
     { name: "CREAM ROLL", types: "4 TYPES", image: creamrollImg },
     { name: "MUFFIN & FRUIT CAKE", types: "18 TYPES", image: muffinImg },
     { name: "CHIPS", types: "5 TYPES", image: chipsImg },
-    { name: "CHOCOLATES", types: "1 TYPES", image: chocolateImg },
+    { name: "CHOCOLATES", types: "1 TYPE", image: chocolateImg }, // fixed singular
     { name: "RUSK", types: "10 TYPES", image: ruskImg },
   ];
 
@@ -53,7 +53,7 @@ const OurProducts = () => {
               </div>
             );
 
-            // Only wrap first product in Link
+            // Wrap in Link if product has a link
             return item.link ? (
               <Link to={item.link} key={index}>
                 {content}
