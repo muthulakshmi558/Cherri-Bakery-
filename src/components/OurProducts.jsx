@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; 
 import cakeImg from "../assets/images/cake.png";
-import pastryImg from "../assets/images/pastries.png"; // fixed case
+import pastryImg from "../assets/images/Pastries.png"; // fixed case
 import sweetsImg from "../assets/images/sweets.png";
 import giftImg from "../assets/images/gift.png"; // better image if available
 import savoriesImg from "../assets/images/savories.png";
